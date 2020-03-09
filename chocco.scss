@@ -1,0 +1,21 @@
+@import "./scss/hero.scss";
+@import "./btn.scss";
+@import "./scss/features.scss";
+@import "./scss/feeds.scss";
+$green: #365a49;
+$gray: #f2f5f4;
+$blue: #86c3d7;
+body {
+    margin: 0 0 0 0;
+}
+
+img {
+    max-height: 100%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vh;
+    max-height: 650px;
+}

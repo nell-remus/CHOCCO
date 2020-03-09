@@ -1,0 +1,76 @@
+.feeds {
+    padding-top: 70px;
+    padding-left: 60px;
+}
+
+.feeds__title h2 {
+    font-size: 48px;
+    font-family: "Alegreya Sans";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0px 0px 95px 0px;
+}
+
+.content__active {
+    display: flex;
+    position: relative;
+    & ::after {
+        content: "";
+        position: absolute;
+        height: 345px;
+        width: 940px;
+        background: url(../img/feeds/berry_black.png) center center / no-repeat cover;
+    }
+}
+
+.active__text {
+    max-width: 450px;
+    & p {
+        font-size: 18px;
+        font-family: "Alegreya Sans";
+        color: rgb(102, 102, 102);
+        line-height: 1.2;
+        text-align: left;
+    }
+}
+
+.text__title {
+    font-size: 30px;
+    font-family: "Alegreya Sans";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.link__icon {
+    display: flex;
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    & .active {
+        border: 2px solid #365a49;
+    }
+}
+
+.active__icon {
+    display: flex;
+    height: 255px;
+    width: 255px;
+    border: 1px solid;
+    overflow: hidden;
+    margin-right: 20px;
+    &.icon {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.icon__img {
+    justify-content: center;
+    align-items: center;
+}

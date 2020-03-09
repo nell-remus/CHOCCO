@@ -1,0 +1,9 @@
+.feeds__title h2 {
+  font-size: 48px;
+  font-family: "Alegreya Sans";
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
