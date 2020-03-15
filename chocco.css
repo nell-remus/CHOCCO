@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 25px;
-  background: url(../img/hero/back.png) center center/cover no-repeat;
+  background: url(./img/hero/back.png) center center/cover no-repeat;
 }
 .hero::before {
   content: "";
@@ -11,7 +11,7 @@
   position: absolute;
   height: 650px;
   width: 1100px;
-  background: url(../img/hero/back_img.png) bottom/100% no-repeat;
+  background: url(./img/hero/back_img.png) bottom/100% no-repeat;
 }
 
 .hero__menu {
@@ -56,7 +56,7 @@
   content: "";
   height: 11px;
   width: 12px;
-  background: url(../img/hero/phone.png);
+  background: url(./img/hero/phone.png);
   margin-right: 5px;
 }
 
@@ -138,13 +138,6 @@
 .content__icon {
   margin-right: 5px;
   position: relative;
-  /*&::after {
-      content: "";
-      position: absolute;
-      height: 41px;
-      width: 44px;
-      background: url(../img/hero/icon_1_after.png) center center / cover no-repeat;
-  }*/
 }
 
 .features {
