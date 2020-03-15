@@ -1,9 +1,9 @@
 .features {
     align-items: center;
     padding-top: 115px;
-    background: url(../img/whychocco/pattern_sheet.png) 0px 200px / auto no-repeat;
+    background: url(./img/whychocco/pattern_sheet.png) 0px 200px / auto no-repeat;
     &::after {
-        content: url(../img/whychocco/raspberry.png);
+        content: url(./img/whychocco/raspberry.png);
         position: absolute;
         left: 0px;
         margin-top: 305px;
@@ -40,7 +40,7 @@
         max-width: 280px;
     }
     &::after {
-        content: url(../img/whychocco/points.png);
+        content: url(./img/whychocco/points.png);
         position: absolute;
         padding-left: 270px;
         padding-top: 50px;
