@@ -150,10 +150,10 @@
 .features {
   align-items: center;
   padding-top: 115px;
-  background: url(../img/whychocco/pattern_sheet.png) 0px 200px/auto no-repeat;
+  background: url(./img/whychocco/pattern_sheet.png) 0px 200px/auto no-repeat;
 }
 .features::after {
-  content: url(../img/whychocco/raspberry.png);
+  content: url(./img/whychocco/raspberry.png);
   position: absolute;
   left: 0px;
   margin-top: 305px;
@@ -190,7 +190,7 @@
   max-width: 280px;
 }
 .about__content::after {
-  content: url(../img/whychocco/points.png);
+  content: url(./img/whychocco/points.png);
   position: absolute;
   padding-left: 270px;
   padding-top: 50px;
@@ -234,7 +234,7 @@
   padding-left: 60px;
 }
 .feeds::before {
-  content: url(../img/feeds/pattern.png);
+  content: url(./img/feeds/pattern.png);
   position: absolute;
   transform: translate(-60px, 530px);
 }
@@ -251,7 +251,7 @@
 }
 
 .feeds__title h2::after {
-  content: url(../img/feeds/berry.png);
+  content: url(./img/feeds/berry.png);
   position: absolute;
   transform: translate(295px, -5px);
 }
@@ -262,7 +262,7 @@
   align-items: center;
   max-width: 940px;
   height: 345px;
-  background: url(../img/feeds/berry_black.png);
+  background: url(./img/feeds/berry_black.png);
 }
 
 .active__text {
@@ -312,7 +312,7 @@
   justify-content: center;
 }
 .content__list::before {
-  content: url(../img/feeds/berries.png);
+  content: url(./img/feeds/berries.png);
   position: absolute;
   transform: translate(-530px, 50px);
 }
@@ -333,19 +333,19 @@
 }
 
 .link__icon--feed1::after {
-  content: url(../img/feeds/feed3.png);
+  content: url(./img/feeds/feed3.png);
   display: block;
   transform: translate(0px, -13px);
 }
 
 .link__icon--feed2::after {
-  content: url(../img/feeds/feed2.png);
+  content: url(./img/feeds/feed2.png);
   display: block;
   transform: translate(-77px, -10px);
 }
 
 .link__icon--feed3::after {
-  content: url(../img/feeds/feed1.png);
+  content: url(./img/feeds/feed1.png);
   display: block;
   transform: translate(-100px, -40px);
 }
