@@ -1,6 +1,11 @@
 .feeds {
     padding-top: 70px;
     padding-left: 60px;
+    &::before {
+        content: url(./img/feeds/pattern.png);
+        position: absolute;
+        transform: translate(-60px, 530px);
+    }
 }
 
 .feeds__title h2 {
@@ -14,26 +19,31 @@
     margin: 0px 0px 95px 0px;
 }
 
+.feeds__title h2::after {
+    content: url(./img/feeds/berry.png);
+    position: absolute;
+    transform: translate(295px, -5px);
+}
+
 .content__active {
     display: flex;
-    position: relative;
-    & ::after {
-        content: "";
-        position: absolute;
-        height: 345px;
-        width: 940px;
-        background: url(../img/feeds/berry_black.png) center center / no-repeat cover;
-    }
+    justify-content: center;
+    align-items: center;
+    max-width: 940px;
+    height: 345px;
+    background: url(./img/feeds/berry_black.png);
 }
 
 .active__text {
     max-width: 450px;
+    padding-top: 20px;
     & p {
         font-size: 18px;
         font-family: "Alegreya Sans";
         color: rgb(102, 102, 102);
         line-height: 1.2;
         text-align: left;
+        margin-bottom: 30px;
     }
 }
 
@@ -44,33 +54,67 @@
     font-weight: bold;
     line-height: 1.2;
     text-align: left;
+    margin-bottom: 30px;
 }
 
-.link__icon {
-    display: flex;
-    height: 80px;
-    width: 80px;
-    overflow: hidden;
-    border-radius: 50%;
-    & .active {
-        border: 2px solid #365a49;
-    }
+.text__autor {
+    font-size: 18px;
+    font-family: "Alegreya Sans Medium";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: left;
 }
 
 .active__icon {
     display: flex;
-    height: 255px;
-    width: 255px;
-    border: 1px solid;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    max-height: 255px;
+    max-width: 255px;
     overflow: hidden;
     margin-right: 20px;
-    &.icon {
-        justify-content: center;
-        align-items: center;
+}
+
+.content__list {
+    display: flex;
+    justify-content: center;
+    &::before {
+        content: url(./img/feeds/berries.png);
+        position: absolute;
+        transform: translate(-530px, 50px);
     }
 }
 
-.icon__img {
-    justify-content: center;
-    align-items: center;
+.list__link {
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.list__link.active {
+    border: 6.5px solid #365a49;
+}
+
+.link__icon--feed1::after {
+    content: url(./img/feeds/feed3.png);
+    display: block;
+    transform: translate(0px, -13px);
+}
+
+.link__icon--feed2::after {
+    content: url(./img/feeds/feed2.png);
+    display: block;
+    transform: translate(-77px, -10px);
+}
+
+.link__icon--feed3::after {
+    content: url(./img/feeds/feed1.png);
+    display: block;
+    transform: translate(-100px, -40px);
 }

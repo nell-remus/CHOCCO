@@ -1,32 +1,33 @@
 .hero {
     padding-top: 25px;
-    padding-right: 80px;
-    padding-left: 80px;
-    background: url(../img/hero/back.png) center center / cover no-repeat;
-    &::after {
-        content: "";
-        display: block;
-        height: 345px;
-        background: url(../img/hero/back_img.png);
-    }
+    background: url(./img/hero/back.png) center center / cover no-repeat;
 }
 
-.menu {
+.hero__menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.hero__main {
+    display: flex;
+    justify-content: space-around;
 }
 
 .menu__links {
     list-style-type: none;
     display: flex;
+    & .link {
+        margin-right: 30px;
+    }
+}
+
+.link__name {
+    text-decoration: none;
     font-size: 18px;
     font-family: "Alegreya Sans";
     color: rgb(255, 255, 255);
     line-height: 1.5;
-    & .link {
-        margin-right: 30px;
-    }
 }
 
 .contacts {
@@ -44,7 +45,7 @@
     content: "";
     height: 11px;
     width: 12px;
-    background: url(../img/hero/phone.png);
+    background: url(./img/hero/phone.png);
     margin-right: 5px;
 }
 
@@ -56,6 +57,7 @@
         color: rgb(255, 255, 255);
         line-height: 1.2;
         text-align: left;
+        margin-bottom: 35px;
     }
 }
 
@@ -67,6 +69,7 @@
     text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
+    margin-bottom: 25px;
 }
 
 .btn {
@@ -77,6 +80,7 @@
     text-align: center;
     padding: 20px 30px 20px 30px;
     border: none;
+    margin-bottom: 70px;
     cursor: pointer;
     &:hover {
         background-color: #365a49;
@@ -114,16 +118,13 @@
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: left;
+    margin-right: 40px;
+    &:last-child {
+        margin-right: 0px;
+    }
 }
 
 .content__icon {
     margin-right: 5px;
     position: relative;
-    &::after {
-        content: "";
-        position: absolute;
-        height: 41px;
-        width: 44px;
-        background: url(../img/hero/icon_1_after.png);
-    }
 }
